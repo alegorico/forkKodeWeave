@@ -4139,10 +4139,6 @@ miscellaneous();
 newDocument();
 preprocessors();
 
-// Buy kodeWeave T-Shirt Ad
-if (navigator.onLine) {
-  alertify.message("<div class=\"grid\"><div class=\"centered grid__col--12 tc\"><h2>Help keep this free!</h2><a href=\"https://snaptee.co/t/0rtzt?msg=31&r=tw\" target=\"_blank\"><img src=\"assets/model-1.jpg\" width=\"100%\"></a><a class=\"btn--success\" href=\"https://snaptee.co/t/0rtzt?msg=31&r=tw\" target=\"_blank\" style=\"display: block;\">Buy Now</a></div></div>");
-}
 
 // Scroll Character Menu
 (function() {
