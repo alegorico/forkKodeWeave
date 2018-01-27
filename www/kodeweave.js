@@ -3196,8 +3196,8 @@ function getURL(url, c) {
   };
 }
 
-getURL("https://ternjs.net/defs/ecma5.json", function(err, code) {
-  if (err) throw new Error("Request for ecma5.json: " + err);
+getURL("https://ternjs.net/defs/ecmascript.json", function(err, code) {
+  if (err) throw new Error("Request for ecmascript.json: " + err);
   server = new CodeMirror.TernServer({defs: [JSON.parse(code)]});
   jsEditor.on("cursorActivity", function(cm) { server.updateArgHints(cm); });
 });
@@ -3936,12 +3936,6 @@ document.querySelector("[data-action=save-gist]").onclick = function() {
     document.querySelector("[data-output=embedProject]").onclick = function() {
       this.select(true);
     };
-
-    $(".share-facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=https%3A//alegorico.github.io/kodeWeave/editor/%23" + hash);
-    $(".share-twitter").attr("href", "https://twitter.com/home?status=Checkout%20my%20"+ document.querySelector("[data-action=sitetitle]").value.split(" ").join("%20") +"%20%23weave%20on%20%23kodeWeave%20%23kodeWeaveShare%20-%20https%3A//alegorico.github.io/kodeWeave/e/%23" + hash);
-    $(".share-gplus").attr("href", "https://plus.google.com/share?url=https%3A//alegorico.github.io/kodeWeave/editor/%23" + hash);
-    $(".share-linkedin-square").attr("href", "https://www.linkedin.com/shareArticle?mini=true&url=https%3A//alegorico.github.io/kodeWeave/editor/%23"+ hash +"&title=Checkout%20my%20%23weave%20on%20%23kodeWeave%3A%20&summary=&source=");
-    $("[data-action=socialdialog]").fadeIn();
 
     // Successfully saved weave. 
     // Ask to support open source software.
