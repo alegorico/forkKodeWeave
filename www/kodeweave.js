@@ -275,10 +275,7 @@ var timeout, delay, selected_text, str, mynum,
           saveFile(blob, "source.jade");
         }
         
-        // Ask to support open source software.
-        if (navigator.onLine) {
-          alertify.message("<div class=\"grid\"><div class=\"centered grid__col--12 tc\"><h2>Help keep this free!</h2><a href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\"><img src=\"assets/model-2.jpg\" width=\"100%\"></a><a class=\"btn--success\" href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\" style=\"display: block;\">Buy Now</a></div></div>");
-        }
+
       };
       document.querySelector(".savecss").onclick = function() {
         cssSelected = $("#css-preprocessor option:selected").val();
@@ -301,10 +298,7 @@ var timeout, delay, selected_text, str, mynum,
           saveFile(blob, "source.sass");
         }
         
-        // Ask to support open source software.
-        if (navigator.onLine) {
-          alertify.message("<div class=\"grid\"><div class=\"centered grid__col--12 tc\"><h2>Help keep this free!</h2><a href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\"><img src=\"assets/model-2.jpg\" width=\"100%\"></a><a class=\"btn--success\" href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\" style=\"display: block;\">Buy Now</a></div></div>");
-        }
+
       };
       document.querySelector(".savejs").onclick = function() {
         var jsSelected = $("#js-preprocessor option:selected").val();
@@ -323,19 +317,13 @@ var timeout, delay, selected_text, str, mynum,
           saveFile(blob, "source.jsx");
         }
         
-        // Ask to support open source software.
-        if (navigator.onLine) {
-          alertify.message("<div class=\"grid\"><div class=\"centered grid__col--12 tc\"><h2>Help keep this free!</h2><a href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\"><img src=\"assets/model-2.jpg\" width=\"100%\"></a><a class=\"btn--success\" href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\" style=\"display: block;\">Buy Now</a></div></div>");
-        }
+
       };
       document.querySelector(".savemd").onclick = function() {
         var blob = new Blob([ mdEditor.getValue() ], {type: "text/x-markdown"});
         saveFile(blob, "source.md");
         
-        // Ask to support open source software.
-        if (navigator.onLine) {
-          alertify.message("<div class=\"grid\"><div class=\"centered grid__col--12 tc\"><h2>Help keep this free!</h2><a href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\"><img src=\"assets/model-2.jpg\" width=\"100%\"></a><a class=\"btn--success\" href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\" style=\"display: block;\">Buy Now</a></div></div>");
-        }
+
       };
     },
     applyLowercase = function() {      
@@ -3938,8 +3926,7 @@ document.querySelector("[data-action=save-gist]").onclick = function() {
     };
 
     // Successfully saved weave. 
-    // Ask to support open source software.
-    alertify.message("<div class=\"grid\"><div class=\"centered grid__col--12 tc\"><h2>Help keep this free!</h2><a href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\"><img src=\"assets/model-2.jpg\" width=\"100%\"></a><a class=\"btn--success\" href=\"https://snaptee.co/t/2nezt/?r=fb&teeId=2nezt\" target=\"_blank\" style=\"display: block;\">Buy Now</a></div></div>");
+
   }).error(function(e) {
     console.warn("Error: Could not save weave!", e);
     alertify.error("Error: Could not save weave!");
